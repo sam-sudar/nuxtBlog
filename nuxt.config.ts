@@ -9,4 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  routeRules: {
+    "/api/**": { proxy: { to: "https://fakestoreapi.com/**" } },
+  },
 });
